@@ -24,6 +24,7 @@ pairJoin (x, (y, a)) = (x <> y, a)
 --          r has an associative binary operation (<>)
 --          It must satisfy the monoid laws  
 
+---------------------------------------------------------------------------------------------------------------
 -- Prove either --
 -- prove that the three monad laws hold for the Either monad
 -- hint: prove by cases (Left vs Right)
@@ -61,6 +62,7 @@ pairJoin (x, (y, a)) = (x <> y, a)
 
 -- satisfies the monad laws.
 
+---------------------------------------------------------------------------------------------------------------
 -- Prove list --
 -- prove that the three monad laws hold for the list monad
 -- instance Monad []  where
@@ -96,6 +98,7 @@ pairJoin (x, (y, a)) = (x <> y, a)
 
 -- satisfies the monad laws.
 
+---------------------------------------------------------------------------------------------------------------
 -- Prove arrow --
 -- prove that the three monad laws hold for the arrow monad
 -- hint: unlock each side of the equality with a value of type r, and check that both sides are indeed equal
@@ -133,7 +136,7 @@ pairJoin (x, (y, a)) = (x <> y, a)
 
 -- satisfies the monad laws.
 
-
+---------------------------------------------------------------------------------------------------------------
 -- Prove Pair (Extra) --
 -- 1. left identity return a >>= k = k a 
 -- return a >>= k
